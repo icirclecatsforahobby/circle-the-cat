@@ -116,12 +116,12 @@ function Game(ctx) {
   };
   
   this.winGame = function() {
-    document.getElementById('panelTitle').innerHTML = 'You Win!';
+    document.getElementById('panelTitle').innerHTML = 'Will you go to snowball with me?';
     $('#panel').fadeIn(function() {});
     setTimeout(run, 2000);
   };
   this.loseGame = function() {
-    document.getElementById('panelTitle').innerHTML = 'You Lose';
+    document.getElementById('panelTitle').innerHTML = 'Try again';
     $('#panel').fadeIn(function() {});
     setTimeout(run, 2000);
   };
