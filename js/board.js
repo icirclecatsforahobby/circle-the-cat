@@ -76,10 +76,10 @@ function Board(ctx) {
       for (var j = 0; j < self.numOfBlocks; j++) {
         self.ctx.beginPath();
         if (self.grid[i][j].fill === true) {
-          self.ctx.fillStyle = 'rgb(0,126,143)';
+          self.ctx.fillStyle = 'rgb(128,255,255)';
         }
         else {
-          self.ctx.fillStyle = 'rgb(120,191,229)';
+          self.ctx.fillStyle = 'rgb(0,64,128)';
         }
         self.ctx.arc(self.grid[i][j].getPosition().x, self.grid[i][j].getPosition().y, self.radius, self.startAngle, self.endAngle, self.clockwise);
         self.ctx.fill();
